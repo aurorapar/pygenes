@@ -1,16 +1,24 @@
 import platform
 import locale
 import importlib
+import sys
 
 from enum import auto, Enum
 
-from generic_errors import show_error
+if 'kivy' in sys.modules:
+    from generic_errors import show_error
 
 
 class TRANSLATION(Enum):
     TITLE = auto(),
     MISSING_TRANSLATION = auto(),
     MISSING_TRANSLATION_TITLE = auto()
+    MISSING_PACKAGES_NOTIFICATION = auto(),
+    MISSING_PACKAGES_PROMPT = auto(),
+    MISSING_PACKAGES_RERUN_NOTIFICATION = auto(),
+    FILE_MENU_BUTTON = auto(),
+    FILE_OPEN = auto(),
+    HELP_TOOLBAR_ITEM = auto(),
 
 class Translator:
 
@@ -63,7 +71,9 @@ class Translator:
             error_message += "\nDefaulting to [b]en_US[/b] as the author is only fluent in this language.\n"
             error_message += "\nYou can help translate by visiting: http://github.com/aurpar/pygenes"
             error_title = "Translation Error"
-            show_error(error_title, error_message)
+
+            if 'kivy' in sys.modules:
+                show_error(error_title, error_message)
 
             return en_US.definitions
 
