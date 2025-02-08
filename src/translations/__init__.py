@@ -6,7 +6,7 @@ import sys
 from enum import auto, Enum
 
 if 'kivy' in sys.modules:
-    from generic_errors import show_error
+    from gui.popup import show_popup
 
 
 class TRANSLATION(Enum):
@@ -18,7 +18,11 @@ class TRANSLATION(Enum):
     MISSING_PACKAGES_RERUN_NOTIFICATION = auto(),
     FILE_MENU_BUTTON = auto(),
     FILE_OPEN = auto(),
-    HELP_TOOLBAR_ITEM = auto(),
+    HELP_MENU_BUTTON = auto(),
+    ABOUT = auto(),
+    ERROR_TITLE = auto(),
+    ERROR_OCCURRED = auto()
+
 
 class Translator:
 
@@ -73,7 +77,7 @@ class Translator:
             error_title = "Translation Error"
 
             if 'kivy' in sys.modules:
-                show_error(error_title, error_message)
+                show_popup(error_title, error_message)
 
             return en_US.definitions
 

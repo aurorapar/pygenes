@@ -8,5 +8,8 @@ definitions = {
     "MISSING_PACKAGES_RERUN_NOTIFICATION": "You will need to rerun this software after installation. Press enter to continue. ",
     "FILE_MENU_BUTTON": "File",
     "FILE_OPEN": "Open",
-    "HELP_TOOLBAR_ITEM": "Help"
+    "HELP_MENU_BUTTON": "Help",
+    "ABOUT": "About",
+    "ERROR_TITLE": "Error!",
+    "ERROR_OCCURRED": "Sorry, there was an error detected.\nPlease send your log folder to:\n\n    http://github.com/aurorapar/pygenes"
 }

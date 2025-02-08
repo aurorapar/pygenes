@@ -1,1 +1,2 @@
 from gui.toolbar_buttons.toolbar_dropdowns.file_dropdown import FileDropdown
+from gui.toolbar_buttons.toolbar_dropdowns.help_dropdown import HelpDropdown

@@ -36,7 +36,9 @@ def main():
         stack_trace = traceback.format_exc()
         log_message = f"{current_date} Error occurred\n{stack_trace}"
         Logger.error(log_message)
-        exit(1)
+
+        from gui.popup import show_popup
+        show_popup(translator.translations[TRANSLATION.ERROR_TITLE], translator.translations[TRANSLATION.ERROR_OCCURRED])
 
 
 if __name__ == "__main__":
