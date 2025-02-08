@@ -1,11 +1,5 @@
-import os
-
 from kivy.uix.button import Button
 from kivy.uix.dropdown import DropDown
-
-from file_operations import DATA_FILE_DIR
-from translations import Translator, TRANSLATION
-translator = Translator()
 
 class FileDropdown(DropDown):
 
@@ -15,10 +9,10 @@ class FileDropdown(DropDown):
         super(FileDropdown, self).__init__(**kwargs)
 
         buttons_and_callbacks = [
-            (translator.translations[TRANSLATION.FILE_NEW], self._new_listener),
-            (translator.translations[TRANSLATION.FILE_OPEN], self._open_listener),
-            (translator.translations[TRANSLATION.FILE_SAVE], self._save_listener),
-            (translator.translations[TRANSLATION.FILE_CLOSE], self._close_listener),
+            ("new", self._new_listener),
+            ("open", self._open_listener),
+            ("save", self._save_listener),
+            ("close", self._close_listener),
         ]
 
         for button_text, callback in buttons_and_callbacks:
@@ -33,7 +27,6 @@ class FileDropdown(DropDown):
 
     def _new_listener(self, instance):
         self.dismiss()
-        project_files = os.listdir(DATA_FILE_DIR)
 
     def _open_listener(self, instance):
         self.dismiss()

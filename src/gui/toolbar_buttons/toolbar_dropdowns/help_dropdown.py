@@ -3,9 +3,6 @@ from kivy.uix.dropdown import DropDown
 from kivy.uix.label import Label
 from kivy.uix.popup import Popup
 
-from translations import Translator, TRANSLATION
-translator = Translator()
-
 class HelpDropdown(DropDown):
 
     COLOR = [.3, .3, .3, 1]
@@ -15,7 +12,7 @@ class HelpDropdown(DropDown):
         super(HelpDropdown, self).__init__(**kwargs)
 
         buttons_and_callbacks = [
-            (translator.translations[TRANSLATION.ABOUT], self._about_listener)
+            ("about", self._about_listener)
         ]
 
         for button_text, callback in buttons_and_callbacks:
@@ -29,9 +26,9 @@ class HelpDropdown(DropDown):
             self.add_widget(button)
 
     def _about_listener(self, instance):
-        content = Label(text=translator.translations[TRANSLATION.ABOUT_SECTION], size=[200,200])
+        content = Label(text="This popup should break the file dropdown list", size=[200,200])
         popup = Popup(
-            title=translator.translations[TRANSLATION.ABOUT],
+            title="about",
             content=content,
             size_hint=[None,None],
             size=[400, 200]

@@ -1,11 +1,6 @@
 from kivy.uix.actionbar import ActionView, ActionButton, ActionPrevious, ActionGroup
 
 from gui.toolbar_buttons import FileToolbarButton, HelpToolbarButton
-from kivy.uix.image import Image
-
-from translations import Translator, TRANSLATION
-
-translator = Translator()
 
 class ToolbarView(ActionView):
 
