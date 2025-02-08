@@ -9,8 +9,7 @@ class HelpToolbarButton(ActionButton):
 
     def __init__(self, **kwargs):
         super(HelpToolbarButton, self).__init__(**kwargs)
-        self.text = translator.translations[TRANSLATION.HELP_MENU_BUTTON]
+        self.text = ' ' + translator.translations[TRANSLATION.HELP_MENU_BUTTON] + ' '
 
-        dropdown = HelpDropdown()
-        self.bind(on_release=dropdown.open)
-
+        help_dropdown = HelpDropdown()
+        self.bind(on_release=help_dropdown.open)
