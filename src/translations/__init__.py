@@ -15,9 +15,12 @@ class TRANSLATION(Enum):
     MISSING_TRANSLATION_TITLE = auto()
     MISSING_PACKAGES_NOTIFICATION = auto(),
     MISSING_PACKAGES_PROMPT = auto(),
-    MISSING_PACKAGES_RERUN_NOTIFICATION = auto(),
+    # MISSING_PACKAGES_RERUN_NOTIFICATION = auto(),
     FILE_MENU_BUTTON = auto(),
+    FILE_NEW = auto(),
     FILE_OPEN = auto(),
+    FILE_SAVE = auto(),
+    FILE_CLOSE = auto(),
     HELP_MENU_BUTTON = auto(),
     ABOUT = auto(),
     ABOUT_SECTION = auto(),

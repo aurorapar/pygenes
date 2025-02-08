@@ -19,6 +19,7 @@ class ToolbarWidget(ActionBar):
             self.rect = Rectangle(size=[self.size[0], ToolbarWidget.LAYOUT_HEIGHT])
 
         self.bind(size=self._update_rect, pos=self._update_rect)
+
         toolbar = ToolbarView()
         self.add_widget(toolbar)
         self.toolbar = toolbar

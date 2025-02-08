@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="base gui setup">
-      <change afterPath="$PROJECT_DIR$/src/hardware/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hardware/id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pygenes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pygenes.iml" afterDir="false" />
+    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translations/en_US.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en_US.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dropdown_popup_interactiob_bug" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -67,7 +65,7 @@
     "Python.toolbar_view.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "#1 on dynamic__button__dropdowns",
     "last_opened_file_path": "/home/aurora/PycharmProjects/pygenes",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -194,7 +192,31 @@
       <option name="project" value="LOCAL" />
       <updated>1739018100622</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+      <option name="closed" value="true" />
+      <created>1739027508767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739027508767</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+      <option name="closed" value="true" />
+      <created>1739027600078</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739027600078</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+      <option name="closed" value="true" />
+      <created>1739035240421</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739035240421</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,16 +235,7 @@
     <MESSAGE value="decided against installer - dont want multi-os binary hassle" />
     <MESSAGE value="translation support" />
     <MESSAGE value="base gui setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="base gui setup" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/gui/toolbar_view.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
   </component>
 </project>
