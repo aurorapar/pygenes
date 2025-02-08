@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="translation support">
-      <change afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/dna.txt" afterDir="false" />
+    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="base gui setup">
+      <change afterPath="$PROJECT_DIR$/src/hardware/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hardware/id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pygenes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pygenes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generic_errors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/popup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/main_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/main_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/translations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/__init__.py" afterDir="false" />
@@ -59,9 +59,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.PyGenes.executor": "Debug",
+    "Python.PyGenes.executor": "Run",
+    "Python.en_US.executor": "Run",
     "Python.install_creator.executor": "Debug",
     "Python.main.executor": "Run",
+    "Python.popup.executor": "Run",
     "Python.toolbar_view.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -80,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.PyGenes">
     <configuration name="PyGenes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pygenes" />
       <option name="ENV_FILES" value="" />
@@ -103,9 +105,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="en_US" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pygenes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/translations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/translations/en_US.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.en_US" />
+      <item itemvalue="Python.PyGenes" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.PyGenes" />
+        <item itemvalue="Python.en_US" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738938579794</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="base gui setup">
+      <option name="closed" value="true" />
+      <created>1739018100622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739018100622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,7 +212,8 @@
     <MESSAGE value="initial creation" />
     <MESSAGE value="decided against installer - dont want multi-os binary hassle" />
     <MESSAGE value="translation support" />
-    <option name="LAST_COMMIT_MESSAGE" value="translation support" />
+    <MESSAGE value="base gui setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="base gui setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

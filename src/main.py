@@ -1,4 +1,5 @@
 import os
+import socket
 import traceback
 from datetime import datetime
 
@@ -18,6 +19,8 @@ def main():
         Config.set('kivy', 'log_dir', os.path.join(dir_path, '..', 'logs'))
         Config.set('kivy', 'log_level', 'error')
 
+        from hardware import identify_machine
+
     except ModuleNotFoundError:
         print(translator.translations[TRANSLATION.MISSING_PACKAGES_NOTIFICATION])
         install_requirements_choice = input(translator.translations[TRANSLATION.MISSING_PACKAGES_PROMPT])
@@ -34,7 +37,9 @@ def main():
     except Exception as mainException:
         now = datetime.now().strftime(date_format)
         stack_trace = traceback.format_exc()
-        log_message = f"{current_date} Error occurred\n{stack_trace}"
+        machine_id = identify_machine()
+        machine_name = socket.gethostname()
+        log_message = f"{current_date} Error occurred on hostname {machine_name} machine id {machine_id} \n{stack_trace}"
         Logger.error(log_message)
 
         from gui.popup import show_popup

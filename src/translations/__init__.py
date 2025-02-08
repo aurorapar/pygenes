@@ -20,6 +20,7 @@ class TRANSLATION(Enum):
     FILE_OPEN = auto(),
     HELP_MENU_BUTTON = auto(),
     ABOUT = auto(),
+    ABOUT_SECTION = auto(),
     ERROR_TITLE = auto(),
     ERROR_OCCURRED = auto()
 

@@ -10,6 +10,7 @@ definitions = {
     "FILE_OPEN": "Open",
     "HELP_MENU_BUTTON": "Help",
     "ABOUT": "About",
+    "ABOUT_SECTION": "Author: Aurora Pariseau (2025)\nGitHub: http://github.com/aurorapar/pygenes\nCheck the resource (res) folder for additional credits",
     "ERROR_TITLE": "Error!",
     "ERROR_OCCURRED": "Sorry, there was an error detected.\nPlease send your log folder to:\n\n    http://github.com/aurorapar/pygenes"
 }

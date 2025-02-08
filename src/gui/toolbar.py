@@ -21,9 +21,10 @@ class ToolbarWidget(ActionBar):
         self.bind(size=self._update_rect, pos=self._update_rect)
         toolbar = ToolbarView()
         self.add_widget(toolbar)
-        toolbar.padding = [0,0,625,0]
-
+        self.toolbar = toolbar
+        self.toolbar.padding = [0,0,Window.size[0] - 150,0]
 
     def _update_rect(self, instance, value):
         self.rect.pos = (0, Window.height - ToolbarWidget.LAYOUT_HEIGHT)
         self.rect.size = (value[0], ToolbarWidget.LAYOUT_HEIGHT)
+        self.toolbar.padding = [0, 0, Window.size[0] - 150, 0]
