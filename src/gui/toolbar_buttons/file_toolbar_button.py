@@ -9,7 +9,7 @@ class FileToolbarButton(ActionButton):
 
     def __init__(self, **kwargs):
         super(FileToolbarButton, self).__init__(**kwargs)
-        self.text = translator.translations[TRANSLATION.FILE_MENU_BUTTON]
+        self.text = ' ' + translator.translations[TRANSLATION.FILE_MENU_BUTTON] + ' '
 
         file_dropdown = FileDropdown()
         self.bind(on_release=file_dropdown.open)

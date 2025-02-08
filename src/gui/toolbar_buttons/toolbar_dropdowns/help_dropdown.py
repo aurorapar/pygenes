@@ -1,5 +1,3 @@
-import os
-
 from kivy.uix.button import Button
 from kivy.uix.dropdown import DropDown
 from kivy.uix.label import Label
@@ -10,17 +8,27 @@ translator = Translator()
 
 class HelpDropdown(DropDown):
 
-    def __init__(self, **kwargs):
-        super(HelpDropdown, self).__init__(**kwargs)
-        about_button = Button()
-        about_button.text = translator.translations[TRANSLATION.ABOUT]
-        about_button.bind(on_release=self._about_button_listener)
-        about_button.height = 22
-        about_button.size_hint_y = None
-        self.add_widget(about_button)
+    COLOR = [.3, .3, .3, 1]
 
-    def _about_button_listener(self, instance):
-        print(instance)
+    def __init__(self, **kwargs):
+
+        super(HelpDropdown, self).__init__(**kwargs)
+
+        buttons_and_callbacks = [
+            (translator.translations[TRANSLATION.ABOUT], self._about_listener)
+        ]
+
+        for button_text, callback in buttons_and_callbacks:
+            button = Button()
+            button.background_normal = ''
+            button.background_color = HelpDropdown.COLOR
+            button.text = button_text
+            button.bind(on_release=callback)
+            button.height = 30
+            button.size_hint_y = None
+            self.add_widget(button)
+
+    def _about_listener(self, instance):
         content = Label(text=translator.translations[TRANSLATION.ABOUT_SECTION], size=[200,200])
         popup = Popup(
             title=translator.translations[TRANSLATION.ABOUT],

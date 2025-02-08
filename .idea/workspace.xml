@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="base gui setup">
-      <change afterPath="$PROJECT_DIR$/src/hardware/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hardware/id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pygenes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pygenes.iml" afterDir="false" />
+    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logger/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logger/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_view.py" afterDir="false" />
@@ -194,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739018100622</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+      <option name="closed" value="true" />
+      <created>1739027508767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739027508767</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+      <option name="closed" value="true" />
+      <created>1739027600078</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739027600078</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,16 +226,7 @@
     <MESSAGE value="decided against installer - dont want multi-os binary hassle" />
     <MESSAGE value="translation support" />
     <MESSAGE value="base gui setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="base gui setup" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/gui/toolbar_view.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
   </component>
 </project>

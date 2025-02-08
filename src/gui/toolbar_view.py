@@ -1,14 +1,13 @@
 from kivy.uix.actionbar import ActionView, ActionButton, ActionPrevious, ActionGroup
 
 from gui.toolbar_buttons import FileToolbarButton, HelpToolbarButton
+from kivy.uix.image import Image
 
 from translations import Translator, TRANSLATION
 
 translator = Translator()
 
 class ToolbarView(ActionView):
-
-    BUTTON_SPACING = 5
 
     def __init__(self, **kwargs):
         super(ToolbarView, self).__init__(**kwargs)
@@ -23,5 +22,6 @@ class ToolbarView(ActionView):
             FileToolbarButton(),
             HelpToolbarButton()
         ]
+
         for button in all_buttons:
             self.add_widget(button)
