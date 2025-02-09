@@ -1,5 +1,7 @@
 import os
 
+from kivy.core.window import Window
+from kivy.graphics import Color
 from kivy.uix.actionbar import ActionView, ActionButton, ActionPrevious, ActionGroup
 from kivy.uix.label import Label
 from kivy.uix.popup import Popup
@@ -10,10 +12,12 @@ translator = Translator()
 
 class ToolbarView(ActionView):
 
-    COLOR = [.3, .3, .3, 1]
+    LAYOUT_HEIGHT = 25
+    # COLOR = [.3, .3, .3, 1]
 
     def __init__(self, **kwargs):
         super(ToolbarView, self).__init__(**kwargs)
+
         self.use_separator = False
         self.action_previous = ActionPrevious()
         self.action_previous.app_icon = ''

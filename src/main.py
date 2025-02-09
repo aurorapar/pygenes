@@ -13,7 +13,7 @@ def main():
 
         with open(REQUIREMENTS_FILE) as f:
             required_imports = list(map(str.strip, f.readlines()))
-        print(required_imports)
+
         for required_import in required_imports:
             importlib.import_module(required_import)
 
@@ -40,7 +40,6 @@ def main():
         exception_logger.error(mainException)
         from gui.popup import show_popup
         show_popup(translator.translations[TRANSLATION.ERROR_TITLE], translator.translations[TRANSLATION.ERROR_OCCURRED])
-
 
 if __name__ == "__main__":
     main()

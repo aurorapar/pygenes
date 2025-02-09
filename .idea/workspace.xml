@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)">
+    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="rewrote actionview using groups and spinners">
+      <change afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/file_toolbar_button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/help_toolbar_button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/file_dropdown.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns/help_dropdown.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/main_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/main_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/toolbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logger/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/logger/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739035240421</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rewrote actionview using groups and spinners">
+      <option name="closed" value="true" />
+      <created>1739041057503</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739041057503</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +243,7 @@
     <MESSAGE value="translation support" />
     <MESSAGE value="base gui setup" />
     <MESSAGE value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
+    <MESSAGE value="rewrote actionview using groups and spinners" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrote actionview using groups and spinners" />
   </component>
 </project>
