@@ -4,14 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="rewrote actionview using groups and spinners">
-      <change afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
+    <list default="true" id="dc124562-4597-4485-8f5f-be859a97acb8" name="Changes" comment="better toolbar management">
+      <change afterPath="$PROJECT_DIR$/src/data_structures/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_structures/family_line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_structures/identity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_structures/metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file_operations/close.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file_operations/new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file_operations/open.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file_operations/save.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/buttons/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/buttons/new_family_line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/text_prompt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/theme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/system/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/system/software/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/system/software/version.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_operations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_operations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/main_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/main_layout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/toolbar_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/toolbar_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hardware/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/hardware/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hardware/id.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/hardware/id.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logger/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/logger/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translations/en_US.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en_US.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,16 +88,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "#1 on dynamic__button__dropdowns",
-    "last_opened_file_path": "/home/aurora/PycharmProjects/pygenes",
+    "last_opened_file_path": "/home/aurora/PycharmProjects/pygenes/src/file_operations",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/file_operations" />
       <recent name="$PROJECT_DIR$/src/gui" />
       <recent name="$PROJECT_DIR$/src/gui/toolbar_buttons/toolbar_dropdowns" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/state" />
+      <recent name="$PROJECT_DIR$/src/system" />
       <recent name="$PROJECT_DIR$/src/gui" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -223,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739041057503</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="better toolbar management">
+      <option name="closed" value="true" />
+      <created>1739141557380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739141557380</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +278,7 @@
     <MESSAGE value="base gui setup" />
     <MESSAGE value="fixed actiongroup nonsense for file/about issue (clicking about button disabled buttons in file dropdown)" />
     <MESSAGE value="rewrote actionview using groups and spinners" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrote actionview using groups and spinners" />
+    <MESSAGE value="better toolbar management" />
+    <option name="LAST_COMMIT_MESSAGE" value="better toolbar management" />
   </component>
 </project>

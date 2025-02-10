@@ -6,4 +6,6 @@ REQUIREMENTS_FILE = os.path.join(DIR_PATH, '..', 'requirements.txt')
 DATE_FORMAT = '%Y-%m-%d_%H-%M-%S'
 LOG_PATH = os.path.join(DIR_PATH, 'logs')
 
-DATA_PATH = os.path.join(DIR_PATH, 'data')
+USER_HOME = os.environ['HOME']
+
+FILE_EXTENSION = ".pyg"

@@ -10,23 +10,26 @@ if 'kivy' in sys.modules:
 
 
 class TRANSLATION(Enum):
-    TITLE = auto(),
-    MISSING_TRANSLATION = auto(),
+    TITLE = auto()
+    MISSING_TRANSLATION = auto()
     MISSING_TRANSLATION_TITLE = auto()
-    MISSING_PACKAGES_NOTIFICATION = auto(),
-    MISSING_PACKAGES_PROMPT = auto(),
-    # MISSING_PACKAGES_RERUN_NOTIFICATION = auto(),
-    FILE_MENU_BUTTON = auto(),
-    FILE_NEW = auto(),
-    FILE_OPEN = auto(),
-    FILE_SAVE = auto(),
-    FILE_CLOSE = auto(),
-    HELP_MENU_BUTTON = auto(),
-    ABOUT = auto(),
-    ABOUT_SECTION = auto(),
-    ERROR_TITLE = auto(),
+    MISSING_PACKAGES_NOTIFICATION = auto()
+    MISSING_PACKAGES_PROMPT = auto()
+    # MISSING_PACKAGES_RERUN_NOTIFICATION = auto()
+    FILE_MENU_BUTTON = auto()
+    FILE_NEW = auto()
+    FILE_OPEN = auto()
+    FILE_SAVE = auto()
+    FILE_CLOSE = auto()
+    HELP_MENU_BUTTON = auto()
+    ABOUT = auto()
+    ABOUT_SECTION = auto()
+    ERROR_TITLE = auto()
     ERROR_OCCURRED = auto()
-
+    NEW_FAMILY_LINE = auto()
+    NO_SAVE_DATA = auto()
+    ENTER_FILE_NAME = auto()
+    CANCEL = auto()
 
 class Translator:
 

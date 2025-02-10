@@ -1,11 +1,13 @@
 import os
 
-from kivy.core.window import Window
-from kivy.graphics import Color
 from kivy.uix.actionbar import ActionView, ActionButton, ActionPrevious, ActionGroup
 from kivy.uix.label import Label
 from kivy.uix.popup import Popup
 
+from plyer import filechooser
+
+from constants import FILE_EXTENSION, USER_HOME
+from gui.theme import FOREGROUND_COLOR
 from translations import Translator, TRANSLATION
 
 translator = Translator()
@@ -13,7 +15,7 @@ translator = Translator()
 class ToolbarView(ActionView):
 
     LAYOUT_HEIGHT = 25
-    # COLOR = [.3, .3, .3, 1]
+    COLOR = FOREGROUND_COLOR
 
     def __init__(self, **kwargs):
         super(ToolbarView, self).__init__(**kwargs)
@@ -43,8 +45,9 @@ class ToolbarView(ActionView):
             action_group.mode = 'spinner'
             for button_text, button_callback in button_text_callback:
                 action_button = ActionButton()
-                # action_button.background_normal = ''
-                # action_button.background_color = ToolbarView.COLOR
+                action_button.background_normal = ''
+                action_button.background_image = ''
+                action_button.background_color = ToolbarView.COLOR
                 action_button.text = ' ' + button_text + ' '
                 action_button.bind(on_release=button_callback)
                 # action_button.height = 30
@@ -56,10 +59,16 @@ class ToolbarView(ActionView):
         project_files = os.listdir()
 
     def _open_listener(self, instance):
-        pass
+        selection = filechooser.open_file(
+            title=translator.translations[TRANSLATION.FILE_OPEN],
+            filters = [("PyGene Files", f"*{FILE_EXTENSION}")],
+            path=USER_HOME
+        )
+        print(selection)
 
     def _save_listener(self, instance):
-        pass
+        selection = filechooser.save_file(title=translator.translations[TRANSLATION.FILE_SAVE], path=USER_HOME)
+        print(selection)
 
     def _close_listener(self, instance):
         pass

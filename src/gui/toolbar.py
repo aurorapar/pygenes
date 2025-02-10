@@ -3,12 +3,12 @@ from kivy.graphics import Color, Rectangle
 from kivy.uix.actionbar import ActionBar
 
 from gui.toolbar_view import ToolbarView
-
+from gui.theme import FOREGROUND_COLOR
 
 class ToolbarWidget(ActionBar):
 
     LAYOUT_SIZE = [Window.width, 25]
-    COLOR = [.2, .2, .2]
+    COLOR = FOREGROUND_COLOR
 
     def __init__(self, **kwargs):
         # make sure we aren't overriding any important functionality
