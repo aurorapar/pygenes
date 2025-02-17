@@ -14,8 +14,9 @@ class NewFamilyLineLayout(FloatLayout):
 
     LAYOUT_SIZE = [200, 30]
     
-    def __init__(self, **kwargs):
+    def __init__(self, controller, **kwargs):
         super(NewFamilyLineLayout, self).__init__(**kwargs)
+        self.controller = controller
 
         self.size_hint = (None, None)
         self.size = NewFamilyLineLayout.LAYOUT_SIZE
@@ -43,4 +44,4 @@ class NewFamilyLineLayout(FloatLayout):
         global FAMILY_LINE
         family_line = FamilyLine()
         state.FAMILY_LINE = family_line
-        FileSaver().execute()
+        FileSaver(self.controller).execute()

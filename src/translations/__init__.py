@@ -29,7 +29,8 @@ class TRANSLATION(Enum):
     NEW_FAMILY_LINE = auto()
     NO_SAVE_DATA = auto()
     ENTER_FILE_NAME = auto()
-    CANCEL = auto()
+    CANCEL = auto(),
+    NEW_FAMILY_LINE_NAME = auto()
 
 class Translator:
 

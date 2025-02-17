@@ -10,9 +10,10 @@ class ToolbarWidget(ActionBar):
     LAYOUT_SIZE = [Window.width, 25]
     COLOR = FOREGROUND_COLOR
 
-    def __init__(self, **kwargs):
+    def __init__(self, controller, **kwargs):
         # make sure we aren't overriding any important functionality
         super(ToolbarWidget, self).__init__(**kwargs)
+        self.controller = controller
         self.size_hint = [None,None]
         self.size = ToolbarWidget.LAYOUT_SIZE
         self.background_image = ''
@@ -28,7 +29,7 @@ class ToolbarWidget(ActionBar):
         self.toolbar.padding = [0, 0, Window.size[0] - 150, 0]
 
     def _add_action_view(self):
-        toolbar = ToolbarView()
+        toolbar = ToolbarView(self.controller)
         self.add_widget(toolbar)
         self.toolbar = toolbar
         self.toolbar.padding = [0, 0, Window.size[0] - 150, 0]

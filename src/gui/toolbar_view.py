@@ -17,8 +17,9 @@ class ToolbarView(ActionView):
     LAYOUT_HEIGHT = 25
     COLOR = FOREGROUND_COLOR
 
-    def __init__(self, **kwargs):
+    def __init__(self, controller, **kwargs):
         super(ToolbarView, self).__init__(**kwargs)
+        self.controller = controller
 
         self.use_separator = False
         self.action_previous = ActionPrevious()

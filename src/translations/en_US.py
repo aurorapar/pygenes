@@ -17,6 +17,7 @@ definitions = {
     "ERROR_TITLE": "Error!",
     "ERROR_OCCURRED": "Sorry, there was an error detected.\nPlease send your log folder to:\n\n    http://github.com/aurorapar/pygenes",
     "NEW_FAMILY_LINE": "Create New Family Line",
+    "NEW_FAMILY_LINE_NAME": "Enter Name For Family Line:",
     "NO_SAVE_DATA": "Could not save - no data present",
     "ENTER_FILE_NAME": "Enter file name:",
     "CANCEL": 'Cancel'

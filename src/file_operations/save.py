@@ -17,9 +17,10 @@ translator = Translator()
 
 class FileSaver(Popup):
 
-    def __init__(self, **kwargs):
+    def __init__(self, controller, **kwargs):
         super(FileSaver, self).__init__(**kwargs)
         self.current_data = state.FAMILY_LINE
+        self.controller = controller
 
         self.title = translator.translations[TRANSLATION.FILE_SAVE]
         self.size_hint = [None, None]
@@ -36,10 +37,10 @@ class FileSaver(Popup):
         file_chooser.filters = ['*' + FILE_EXTENSION]
         self.file_chooser = file_chooser
 
-        file_name_label = Label(text=translator.translations[TRANSLATION.ENTER_FILE_NAME])
+        file_name_label = Label(text=translator.translations[TRANSLATION.NEW_FAMILY_LINE_NAME])
         file_name_label.size_hint = (None,None)
-        file_name_label.size = [50,30]
-        file_name_label.padding = [50, 0, 0, 0]
+        file_name_label.size = [85,30]
+        file_name_label.padding = [85, 0, 0, 0]
 
         file_name_input = TextInput(multiline=False)
         file_name_input.bind(on_text_validate=self.confirm_callback)
@@ -89,13 +90,19 @@ class FileSaver(Popup):
 
     def save_file(self, path):
         if not path.endswith(FILE_EXTENSION):
-            path = os.path.join(path, FILE_EXTENSION)
+            path = path + FILE_EXTENSION # dont use join because it inserts a file separator
         if not self.current_data.path == path:
             if not self.confirm_overwrite():
                 return
         self.current_data.path = path
-        with open(self.current_data.path, 'w') as f:
-            json.dump(self.current_data, f)
+        self.controller.reset_canvas()
+        return
+        if not os.path.exists(self.current_data.path):
+            with open(self.current_data.path, 'w') as f:
+                f.write(json.dumps(self.current_data))
+        else:
+            with open(self.current_data.path, 'w') as f:
+                json.dump(self.current_data, f)
 
     def confirm_overwrite(self):
         return True
